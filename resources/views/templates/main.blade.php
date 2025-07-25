@@ -44,6 +44,7 @@
 
     <div class="wrapper">
         <!-- Sidebar -->
+        @auth
         <div class="sidebar" data-background-color="dark">
             <div class="sidebar-logo">
                 <!-- Logo Header -->
@@ -71,7 +72,7 @@
                         <li class="nav-item active">
                             <a href="{{ route('dashboard') }}">
                                 <i class="fas fa-home p-2 mb-1 fs-5"></i>
-                                <p>Beranda</p>
+                                <p>Dashboard</p>
                             </a>
                         </li>
                         <li class="nav-section">
@@ -120,7 +121,7 @@
             </div>
         </div>
         <!-- End Sidebar -->
-
+        @endauth
         <div class="main-panel">
             <div class="main-header">
                 <div class="main-header-logo">
